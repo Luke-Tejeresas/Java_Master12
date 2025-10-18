@@ -1,0 +1,206 @@
+/* STYLE FOR FEATURES PAGE */
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-image: url("images/Website Background.png");
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+            font-family: 'Bricolage Grotesque', sans-serif;
+        }
+        
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 3rem;
+            text-align: center;
+            margin-left: auto;  
+            margin-right: auto;  
+            width: 100%;
+        }
+
+        .slider-container {
+            position: relative;
+            width: 100%;
+            max-width: 1200px;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            perspective: 1000px;
+            margin: 0 auto;
+        }
+
+        .slides-wrapper {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .slide {
+            position: absolute;
+            transition: all 0.8s cubic-bezier(0.4, 0.0, 0.2, 1);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        .slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        /* Previous slide (left) */
+        .slide.prev {
+            left: 30%;
+            transform: translateX(-50%) scale(0.85);
+            width: 400px;
+            height: 250px;
+            opacity: 0.4;
+            filter: none;
+            z-index: 1;
+        }
+
+        /* Current slide (center) */
+        .slide.active {
+            left: 50%;
+            transform: translateX(-50%) scale(1);
+            width: 500px;
+            height: 300px;
+            opacity: 1;
+            filter: none;
+            z-index: 3;
+            border: 4px solid white;
+        }
+
+        /* Next slide (right) */
+        .slide.next {
+            left: 70%;
+            transform: translateX(-50%) scale(0.85);
+            width: 400px;
+            height: 250px;
+            opacity: 0.4;
+            filter: none;
+            z-index: 1;
+        }
+
+        /* Hidden slides */
+        .slide.hidden {
+            opacity: 0 !important;
+            pointer-events: none;
+            z-index: -1;
+            transform: scale(0);
+            transition: none !important;
+        }
+
+        .arrow {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(255, 255, 255, 0.2);
+            border: 3px solid white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            z-index: 10;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+        }
+
+        .arrow:hover {
+            background: rgba(255, 255, 255, 0.4);
+            transform: translateY(-50%) scale(1.1);
+        }
+
+        .arrow.left {
+            left: 20px;
+        }
+
+        .arrow.right {
+            right: 20px;
+        }
+
+        .arrow::before {
+            content: '';
+            width: 20px;
+            height: 20px;
+            border-top: 4px solid #ffd700;
+            border-right: 4px solid #ffd700;
+            transform: rotate(45deg);
+        }
+
+        .arrow.left::before {
+            transform: rotate(-135deg);
+            margin-left: 5px;
+        }
+
+        .arrow.right::before {
+            margin-right: 5px;
+        }
+
+        .feature-description {
+            text-align: center;
+            margin-top: 2rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .feature-description h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: #fff;
+        }
+
+        .feature-description p {
+            font-size: 1.2rem;
+            color: #ddd;
+            line-height: 1.6;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+                margin-bottom: 2rem;
+            }
+
+            .slider-container {
+                height: 300px;
+            }
+
+            .slide.active {
+                width: 350px;
+                height: 220px;
+            }
+
+            .slide.prev,
+            .slide.next {
+                width: 200px;
+                height: 130px;
+            }
+
+            .arrow {
+                width: 50px;
+                height: 50px;
+            }
+
+            .feature-description h2 {
+                font-size: 1.8rem;
+            }
+
+            .feature-description p {
+                font-size: 1rem;
+            }
+        }

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque&display=swap" rel="stylesheet">
+
+  <title>Java Master</title>
+  <link rel="icon" href="logo/Java Master logo.png" type="image/png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="display topics.css">
+        </head>
+            <body>
+                <header>
+                    <nav class="navbar">
+                    <div class="navdiv">
+                     <!-- Left: Logo -->
+                    <div class="nav-left">
+                         <img src="logo/horizontal-logo-javamaster.png" alt="Java Master logo" class="logo">
+                    </div>
+                    
+                    <!-- Center: Main Menu -->
+                    <div class="nav-center">
+                        <ul class="main-menu">
+                         <li><a href="Overview.html">Home</a></li>
+                         <li><a href="Features.html">Features</a></li>
+                         <li><a href="Topics.html">Topics</a></li>
+                        </ul>
+                    </div>
+
+                     <!-- Right: Buttons -->
+                    <div class="nav-right">
+                         <ul class="auth-buttons">
+                        <li><a href="#" class="btn">Log In</a></li>
+                        <li><a href="#" class="btn">Sign Up</a></li>
+                        </ul>
+                    </div>
+                    </div>
+                    </nav>
+                    </header>
+                
+                <!-- Home Topics -->
+                <main id="topics">
+                    <section class="course-intro-section">
+                        <div class="course-intro-content">
+                            <h1>About this course</h1>
+                            <p>Popular for its versatility and ability to create a wide variety of applications, learning Java opens up your possibilities when coding. Learn important Java coding fundamentals and practice your new skills with real-world projects.</p>
+                            <button class="course-cta-button">Get Started</button>
+                        </div>
+                            <div class="course-intro-image">
+                            <img src="images/James Gosling holding a laptop.png" alt="James Gosling holding a laptop">
+                        </div>
+                    </section>
+
+                    <!-- Beginner Topics Section -->
+                        <section class="beginner-topics-section">
+                            <h2>Beginner's Guide to Java</h2>
+                            <div class="beginner-topics-grid">
+                            <div class="java-topic-card">
+                            <div class="java-topic-icon">
+                                <img src="images/Intro to Java.png" alt="Intro to Java">
+                            </div>
+                                <div class="java-topic-title">Intro to Java</div>
+                            </div>
+
+                            <div class="java-topic-card">
+                            <div class="java-topic-icon">
+                                <img src="images/Static Methods & Fields.png" alt="Static Methods & Fields">
+                            </div>
+                                <div class="java-topic-title">Static Methods & Fields</div>
+                            </div>
+
+                            <div class="java-topic-card">
+                            <div class="java-topic-icon">
+                                <img src="images/Method Overloading.png" alt="Method Overloading">
+                            </div>
+                                <div class="java-topic-title">Method Overloading</div>
+                            </div>
+
+                            <div class="java-topic-card">
+                            <div class="java-topic-icon">
+                                <img src="images/Constructors.png" alt="Constructors">
+                            </div>
+                                <div class="java-topic-title">Constructors</div>
+                            </div>
+
+                            <div class="java-topic-card">
+                            <div class="java-topic-icon">
+                                <img src="images/Encapsulation.png" alt="Encapsulation">
+                            </div>
+                                <div class="java-topic-title">Encapsulation</div>
+                            </div>
+
+                            <div class="java-topic-card">
+                            <div class="java-topic-icon">
+                                <img src="images/Inheritance.png" alt="Inheritance">
+                            </div>
+                                <div class="java-topic-title">Inheritance</div>
+                            </div>
+                        </div>
+                    </section>           
+
+
+                <!-- Frequently asked questions -->
+                <section class="faq-section">
+                    <div class="faq-header">
+                        <h2>Frequently asked questions about Java</h2>
+                    </div>
+
+                    <div class="faq-container">
+                        <div class="faq-item">
+                        <button class="faq-question" onclick="toggleFAQ(this)">
+                        <h3>What is Java?</h3>
+                        <svg class="faq-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                        <div class="faq-answer">
+                            <p>Java is an open-source, general-purpose programming language known for its versatility and stability. It's used for everything from building websites to operating systems and wearable devices. You can even find Java in outer space, running the Mars rover.</p>
+                        </div>
+                    </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFAQ(this)">
+                        <h3>What does Java do?</h3>
+                        <svg class="faq-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+            </button>
+                <div class="faq-answer">
+                    <p>A better question might be, "what can't Java do?" You'll find Java in the back end of websites and web apps, and it dominates the smartphone market as the primary language for Android development. It's also used to process big data and build desktop, game, and cloud-based applications — and many companies use it to build their own internal tools and software.</p>
+                </div>
+            </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFAQ(this)">
+                        <h3>What kind of jobs can Java get me?</h3>
+                    <svg class="faq-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                </svg>
+            </button>
+
+                <div class="faq-answer">
+                    <p>Java is in huge demand across various industries. Adding it to your skill set can help you become a Back-End Developer, Full-Stack Developer, Android Developer, Big Data Engineer, IoT Developer, Quality Assurance Analyst, and more.</p>
+                </div>
+            </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFAQ(this)">
+                        <h3>Are Java and JavaScript the same?</h3>
+                    <svg class="faq-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                </svg>
+            </button>
+
+                <div class="faq-answer">
+                    <p>While their names are similar, Java and JavaScript are two distinct languages. While versatile, JavaScript is primarily used in the web browser, whereas Java is commonly used for back-end development, scientific computing, and Android and IoT development.</p>
+                </div>
+            </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFAQ(this)">
+                        <h3>What do I need to know before learning Java?</h3>
+                <svg class="faq-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                </svg>
+
+            </button>
+                <div class="faq-answer">
+                    <p>There aren't any prerequisites to learning Java, but it helps to have a solid understanding of programming fundamentals (which you can learn in our Java Master).</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</main> <!-- closed main for Home Topics -->
+
+                <!-- Home: Footer -->
+                 <footer class="footer">
+                    <div class="footer-container">
+                        <div class="footer-left">
+                        <div class="footer-logo">
+                            <img src="logo/horizontal-logo-javamaster.png" alt="Java Master Logo">
+                            </div>
+                                <p class="footer-tagline">Stack progress. Deploy Success.</p>
+                            </div>
+
+                <div class="footer-right">
+                    <div class="footer-column">
+                        <h3>About</h3>
+                        <ul>
+                            <li><a href="Overview.html">Home</a></li>
+                            <li><a href="Features.html">Features</a></li>
+                            <li><a href="Topics.html">Topics</a></li>
+                        </ul>
+                    </div>
+
+                <div class="footer-column">
+                    <h3>Support</h3>
+                        <ul>
+                            <li><a href="#contact">Contact</a></li>
+                            <li><a href="#help center">Help Center</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-middle">
+                <p>Built by students, for students.</p>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2025 All Rights Reserved</p>
+                <a href="#privacy policy" class="privacy-link">Privacy Policy</a>
+            </div>
+        </footer>
+    
+    <script src="animation.js"></script>
+</body>
+</html>

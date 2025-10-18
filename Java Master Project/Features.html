@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque&display=swap" rel="stylesheet">
+
+  <title>Java Master</title>
+  <link rel="icon" href="logo/Java Master logo.png" type="image/png">
+  <link rel="stylesheet" href="style.css"> <!-- link for style.css -->
+  <link rel="stylesheet" href="game features.css"> <!-- link for game features.css -->
+  <script src="previous-next.js"></script> <!-- link for previous-next.js -->
+        </head>
+            <body>
+                <header>
+                    <nav class="navbar">
+                    <div class="navdiv">
+                     <!-- Left: Logo -->
+                    <div class="nav-left">
+                         <img src="logo/horizontal-logo-javamaster.png" alt="Java Master logo" class="logo">
+                    </div>
+                    
+                    <!-- Center: Main Menu -->
+                    <div class="nav-center">
+                        <ul class="main-menu">
+                         <li><a href="Overview.html">Home</a></li>
+                         <li><a href="Features.html">Features</a></li>
+                         <li><a href="Topics.html">Topics</a></li>
+                        </ul>
+                    </div>
+
+                     <!-- Right: Buttons -->
+                    <div class="nav-right">
+                         <ul class="auth-buttons">
+                        <li><a href="#" class="btn">Log In</a></li>
+                        <li><a href="#" class="btn">Sign Up</a></li>
+                        </ul>
+                    </div>
+                    </div>
+                    </nav>
+                    </header>
+                
+                <!-- Home Features -->
+                <main id="features">
+                    <h1>Game Features</h1>
+
+                    <div class="slider-container">
+                        <div class="slides-wrapper">
+                            <div class="slide active">
+                                <img src="images/Streak system preview.png" alt="Streak System">
+                    </div>
+
+                    <div class="slide next">
+                        <img src="images/campaign mode.png" alt="campaign mode">
+                    </div>
+
+                    <div class="slide hidden">
+                        <img src="images/quiz preview.png" alt="quiz preview">
+                    </div>
+
+                    <div class="slide hidden">
+                        <img src="images/shop preview.png" alt="shop preview">
+                    </div>
+
+                    <div class="slide hidden">
+                        <img src="images/decks preview.png" alt="decks preview">
+                    </div>
+
+                    <div class="slide hidden">
+                        <img src="images/game account preview.png" alt="game account preview">
+                    </div>
+                </div>
+
+                <div class="arrow left" onclick="prevSlide()"></div>
+                <div class="arrow right" onclick="nextSlide()"></div>
+                </div>
+
+                <!-- a game feature description on each slide -->
+                <div class="feature-description">
+                    <h2 id="feature-title">Streak System</h2>
+                    <p id="feature-text">This is where the consistency tracking in Java Programming helps you maintain your learning momentum every day.</p>
+                </div>
+</main> <!-- closed main for Home features -->
+
+
+
+
+
+
+
+                <!-- Home: Footer -->
+                 <footer class="footer">
+                    <div class="footer-container">
+                        <div class="footer-left">
+                        <div class="footer-logo">
+                            <img src="logo/horizontal-logo-javamaster.png" alt="Java Master Logo">
+                            </div>
+                                <p class="footer-tagline">Stack progress. Deploy Success.</p>
+                            </div>
+
+                <div class="footer-right">
+                    <div class="footer-column">
+                        <h3>About</h3>
+                        <ul>
+                            <li><a href="Overview.html">Home</a></li>
+                            <li><a href="Features.html">Features</a></li>
+                            <li><a href="Topics.html">Topics</a></li>
+                        </ul>
+                    </div>
+
+                <div class="footer-column">
+                    <h3>Support</h3>
+                        <ul>
+                            <li><a href="#contact">Contact</a></li>
+                            <li><a href="#help center">Help Center</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-middle">
+                <p>Built by students, for students.</p>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2025 All Rights Reserved</p>
+                <a href="#privacy policy" class="privacy-link">Privacy Policy</a>
+            </div>
+        </footer>
+    
+    <script src="animation.js"></script>
+</body>
+</html>
